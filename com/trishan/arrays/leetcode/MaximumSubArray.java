@@ -1,6 +1,6 @@
 package com.trishan.arrays.leetcode;
 
-// Link: https://leetcode.com/problems/maximum-subarray/description/
+// Link: https://leetcode.com/problems/maximum-subarray/description/ (FAANG+)
 
 public class MaximumSubArray {
     public static void main(String[] args) {
