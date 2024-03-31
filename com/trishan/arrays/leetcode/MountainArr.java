@@ -19,7 +19,7 @@ public class MountainArr {
             int mid = start + (end - start) / 2;
             if (arr[mid] > arr[mid + 1]) {
                 end = mid;
-            } else {c
+            } else {
                 start = mid + 1;
             }
         }
