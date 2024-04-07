@@ -29,7 +29,7 @@ public class Basics {
         System.out.println(Student.totalStudents);
         Student.hello();
 
-        // final keyword -> won't be able to modify again. (like constants)
+        // final keyword -> won't be able to modify again. (like constants), can be used to avoid Overriding and Inheritance as well.
         final float PI = 3.14f;
 
         greet();
