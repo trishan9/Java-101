@@ -3,8 +3,21 @@ package com.trishan.basics;
 import java.util.Scanner;
 
 public class Main {
+    // Instance Variable - Access with objects, is not shared with other objects
+    int instanceVariable = 120;
+    // Static Variable - Access with class, is shared with other objects
+    static int staticVariable = 2000;
+
     public static void main(String[] args) {
         System.out.println("Hello World!");
+
+        // Local Variable
+        int a = 10;
+
+        Main obj = new Main();
+        System.out.println(obj.instanceVariable);
+        System.out.println(Main.staticVariable);
+        System.out.println(a);
 
         // Taking Inputs
         Scanner sc = new Scanner(System.in);
@@ -23,14 +36,20 @@ public class Main {
         char c = 'a'; // 2 bytes
         boolean bool = true; // 1 byte
         int i = 1000; // 4 bytes
-        float f = 3.14f; // 4 bytes
-        double d = 99.9954; // 8 bytes
-        long l = 111111_111_111L; // 8 bytes
+        float f = 3.14f; // 4 bytes - f is required
+        double d = 99.9954d; // 8 bytes - d is optional
+        long l = 111111_111_111L; // 8 bytes - L is optional
 
-        // Type Conversion (must: Destination Type >= Source Type) - No User Involvement
+        // Non-Primitive Data Types
+        String str1 , str2;
+        str1 = "Trishan";
+        str2 = "Wagle";
+        String str3 = "Hello", str4 = "World";
+
+        // Type Conversion (must: Destination Type >= Source Type) - No User Involvement - (Widening / Implicit Casting)
         System.out.println(i + f); // Here integer is changed to float automatically
 
-        // Type Casting - Done by User
+        // Type Casting (Narrowing / Explicit Casting) - Done by User / Larger datatype to smaller datatype
         System.out.println((int)(f));
 
         // Type Promotions in Expressions
