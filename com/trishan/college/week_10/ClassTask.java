@@ -1,6 +1,6 @@
 package com.trishan.college.week_10;
 
-public class Task4 {
+public class ClassTask {
   // You are building a shape hierarchy for a drawing application. Design an
   // abstract class named "Shape" with the
   // following abstract methods:
